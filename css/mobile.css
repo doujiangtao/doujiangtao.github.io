@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#banner,
+#banner .swiper-slide {
+    height: 100%;
+
+}
+
+body {
+    background: #fff;
+    overflow: hidden;
+}
+
+#banner .swiper-slide {
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb-list {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 5%;
+}
+
+.thumb {
+    width: 20%;
+    margin-left: 4%;
+    float: left;
+}
+
+.thumb .swiper-slide img {
+    width: 100%;
+    display: block;
+}
+
+.ani {
+    position: absolute;
+}
+
+.txt {
+    position: absolute;
+}
+
+.tuoyuan {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tuoyuan.kuangbg {
+    z-index: 0;
+}
+
+.swiper-slide .baikuang {
+    z-index: 1;
+}
+
+.swiper-slide .xukuang {
+    top: 1.15rem;
+    z-index: 2;
+}
+
+.swiper-slide .xukuang {
+    top: 1.15rem;
+    z-index: 3;
+}
+
+
+
+.shuye {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+
+.shuye.shuye1 {
+    transform: rotate(-275deg);
+    left: 1.2rem;
+    width: 0.45rem;
+    height: 0.56rem;
+    z-index: 5;
+    top: 3.6rem;
+
+}
+
+.shuye.shuye2 {
+    right: 1rem;
+    z-index: 4;
+
+}
+
+
+.gr {
+    position: absolute;
+    top: 2.2rem;
+    z-index: 5;
+}
+
+.gr1 {
+    left: 1.4rem;
+}
+
+.gr2 {
+    right: 1.45rem;
+}
+
+.name {
+    position: absolute;
+    top: 1.4rem;
+    padding: 5px;
+    width: 100%;
+    font-family: hanyi_qh95;
+    font-size: 22px;
+    writing-mode: horizontal-tb;
+    cursor: default;
+    min-height: inherit;
+    letter-spacing: 0em;
+    z-index: 5;
+    text-align: center;
+}
+
+.name span {
+    color: rgb(101, 172, 161);
+    font-weight: bold;
+}
+
+.yixang {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: rgb(101, 172, 161);
+    margin: auto;
+    text-align: center;
+    width: 58%;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    background: #fff;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(101, 172, 161);
+    font-weight: bold;
+}
+
+.tel {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color:#fff;
+    width: 58%;
+    padding: 0.2rem;
+    background: #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.intro {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color:#fff;
+    width: 58%;
+    padding: 0.2rem;
+    background: #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.photo {
+    width: 2.29rem;
+    height: 2.29rem;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 6;
+    border: 0.3em solid #fff;
+    box-shadow: 0 0 10px rgb(101, 172, 161);
+
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.u-arrow-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 150;
+    width: 2.4rem;
+    height: 1.4rem;
+    margin-left: -7px;
+}
+
+.pre-wrap-bottom {
+    width: 0.4rem;
+    height: 0.4rem;
+    /* background: #ccc; */
+    position: relative;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
+
+.pre-box1,
+.pre-box2 {
+    height: 0.4rem;
+    width: 0.4rem;
+    position: absolute;
+    top: -0.05rem;
+    /* overflow: hidden; */
+
+}
+
+.pre1,
+.pre2 {
+    background-color: #fff;
+    width: 0.34rem;
+    height: 0.1rem;
+    border-radius: 0.02rem;
+    position: absolute;
+    box-shadow: 0 0 1px #646464;
+    top: 0.16rem;
+}
+
+.pre1 {
+    transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    left: -0.03rem;
+}
+
+.pre2 {
+    left: 0.14rem;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+
+
+.u-arrow-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 150;
+    width: 24px;
+    height: 14px;
+    margin-left: -7px
+}
+
+@-webkit-keyframes start {
+
+    0%,
+    30% {
+        opacity: 0;
+        -webkit-transform: translateY(10px)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-8px)
+    }
+}
+
+@keyframes start {
+
+    0%,
+    30% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-8px)
+    }
+}
