@@ -122,6 +122,16 @@ var thumbSwiper = new Swiper('.thumb', {
 	},
 });
 thumbSwiper[0].slideTo(1, 0)
+
+
+// 判断苹果、安卓、pc
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+	  
+	} else if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
+	  
+	} else { //pc
+	  window.location.href ="./index.html";
+	};
 </script>
 
 </body></html>
