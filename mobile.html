@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://www.swiper.com.cn/demo/progressShow/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Progress演示，志玲姐姐 - swiper中文网</title>
+<meta name="viewport" content="initial-scale=1">
+<!--<link rel="stylesheet" href="../../dist/css/swiper.min.css">
+<script src="../../dist/js/swiper.min.js"></script>-->
+<link rel="stylesheet" href="./css/swiper.min.css">
+<script src="./js/swiper.min.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, #banner, #banner .swiper-slide {
+	height: 100%;
+}
+body {
+	background: #000;
+	overflow: hidden;
+}
+#banner .swiper-slide {
+	overflow: hidden;
+}
+#banner .swiper-slide img {
+	width: 100%;
+}
+.thumb-list {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 5%;
+}
+.thumb {
+	width: 20%;
+	margin-left: 4%;
+	float: left;
+}
+.thumb .swiper-slide img {
+	width: 100%;
+	display: block;
+}
+</style>
+</head>
+<body>
+<div style="max-width:640px; margin:0 auto; height:100%; position:relative;">
+  <div class="swiper-container swiper-container-coverflow swiper-container-3d swiper-container-horizontal" id="banner">
+    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+      <div class="swiper-slide swiper-slide-active" style="width: 640px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1; transition-duration: 0ms;"><img src="./image/mobile/zhiling1.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+      <div class="swiper-slide swiper-slide-next" style="width: 640px; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg); z-index: 0; transition-duration: 0ms;"><img src="./image/mobile/zhiling2.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+      <div class="swiper-slide" style="width: 640px; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg); z-index: -1; transition-duration: 0ms;"><img src="./image/mobile/zhiling3.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms;"></div></div>
+      <div class="swiper-slide" style="width: 640px; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(-150deg); z-index: -2; transition-duration: 0ms;"><img src="./image/mobile/zhiling4.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 3; transition-duration: 0ms;"></div></div>
+    </div>
+  </div>
+  <div class="thumb-list">
+    <div class="swiper-container thumb swiper-container-cube swiper-container-3d swiper-container-horizontal" id="thumb1">
+      <div class="swiper-wrapper" style="transform-origin: 50% 50% -64px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(-90deg); transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-prev" style="width: 128px; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb1.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+        <div class="swiper-slide swiper-slide-active" style="width: 128px; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb1_h.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+      </div>
+    </div>
+    <div class="swiper-container thumb swiper-container-cube swiper-container-3d swiper-container-horizontal" id="thumb2">
+      <div class="swiper-wrapper" style="transform-origin: 50% 50% -64px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-active" style="width: 128px; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb2.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+        <div class="swiper-slide swiper-slide-next" style="width: 128px; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb2_h.jpg"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+      </div>
+    </div>
+    <div class="swiper-container thumb swiper-container-cube swiper-container-3d swiper-container-horizontal" id="thumb3">
+      <div class="swiper-wrapper" style="transform-origin: 50% 50% -64px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-active" style="width: 128px; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb3.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+        <div class="swiper-slide swiper-slide-next" style="width: 128px; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb3_h.jpg"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+      </div>
+    </div>
+    <div class="swiper-container thumb swiper-container-cube swiper-container-3d swiper-container-horizontal" id="thumb4">
+      <div class="swiper-wrapper" style="transform-origin: 50% 50% -64px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-active" style="width: 128px; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb4.jpg"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+        <div class="swiper-slide swiper-slide-next" style="width: 128px; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px); transition-duration: 0ms;"><img src="./image/mobile/thumb4_h.jpg"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+var bannerSwiper = new Swiper('#banner', {
+	mousewheel: true,
+	effect: 'coverflow',
+	speed: 300,
+	watchSlidesProgress: true,
+	on: {
+		touchMove: function() {
+			progress = this.progress
+			for (i = 0; i < this.slides.length; i++) {
+				slideProgress = this.slides[i].progress
+				if (Math.abs(slideProgress) < 1) {
+					thumbSwiper[i].setTranslate(thumbSwiper[i].width * (Math.abs(slideProgress) - 1))
+				}
+			}
+		},
+		transitionStart: function() {
+			activeIndex = this.activeIndex
+			for (i = 0; i < thumbSwiper.length; i++) {
+				if (i == activeIndex) {
+					thumbSwiper[i].slideTo(1);
+				} else {
+					thumbSwiper[i].slideTo(0);
+				}
+			}
+		},
+	}
+});
+var thumbSwiper = new Swiper('.thumb', {
+	watchSlidesProgress: true,
+	effect: 'cube',
+	touchRatio: 0,
+	cubeEffect: {
+		shadow: false,
+	},
+	on: {
+		tap: function() {
+			bannerSwiper.slideTo(this.$el.index());
+		},
+	},
+});
+thumbSwiper[0].slideTo(1, 0)
+</script>
+
+</body></html>
