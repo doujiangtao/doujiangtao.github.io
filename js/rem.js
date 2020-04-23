@@ -24,4 +24,4 @@
                 function (e) {
                     d.body.style.fontSize = "16px"
                 }, !1)
-        }(720, 720);
+        }(750, 750);
