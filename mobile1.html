@@ -170,46 +170,6 @@
                         };
 
 
-
-
-                       function handlePortChange(e){
-                          var lasttime=new Date().getTime();
-                             setTimeout(() => {
-                                        var now=new Date().getTime()
-                                         if(now-lasttime>1000){
-                                             lasttime=now;
-                                             if( !e.target.value ){
-                                                   return this.tableData = this._tableData;
-                                               }
-
-                                                let result = [];
-                                                let str = new RegExp( e.target.value.toUpperCase() );
-                                                for( let i=0; i<this.tableData.length; i++ ){
-                                                    let item = this.tableData[i];
-                                                    let nextItem = this.tableData[i+1] || null;
-                                                    let nNextItem = this.tableData[i+2] || null;
-                                                    
-                                                    if( str.test( item.name.toUpperCase() ) ){
-                                                        result.push( item );
-                                                    };
-
-                                                    if( !nextItem ){ break }
-                                                    if( str.test( nextItem.name.toUpperCase() ) ){
-                                                        result.push( nextItem );
-                                                    };
-                                                    i+=1;
-                                                    if( !nNextItem ){ break }
-                                                    if( str.test( nNextItem.name.toUpperCase() ) ){
-                                                        result.push( nNextItem );
-                                                    };
-                                                    i+=1;
-                                                };
-                                                this.tableData = result;
-
-                                           }
-                                        
-                                    }, 1000)
-                      }
                         </script>
 </body>
 
