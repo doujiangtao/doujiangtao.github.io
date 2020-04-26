@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+ul,li{
+    list-style: none;
+}
 
 html,
 body,
@@ -48,8 +51,8 @@ body {
 }
 
 
-.boxfirst{
-/*     position: absolute;
+.boxfirst {
+    /*     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -72,7 +75,7 @@ body {
 .tuoyuan.kuangbg {
     top: 0.1rem;
     left: 0.36rem;
-     width: 6rem;
+    width: 6rem;
 }
 
 .swiper-slide .baikuang {
@@ -95,11 +98,11 @@ body {
 
 .shuye {
     position: absolute;
-  
+
 }
 
 .shuye.shuye1 {
-   transform: rotate(5deg);
+    transform: rotate(5deg);
     left: 0.2rem;
     width: 0.45rem;
     height: 0.56rem;
@@ -127,12 +130,15 @@ body {
     justify-content: center;
     width: 4rem;
 }
-.gr_item{
+
+.gr_item {
     flex: 1;
 }
-.gr_item img{
+
+.gr_item img {
     width: 2rem;
 }
+
 .gr1 {
     left: 1.2rem;
 }
@@ -163,7 +169,7 @@ body {
 
 .yixang {
     position: absolute;
-    top:6.1rem;
+    top: 6.1rem;
     left: 0;
     right: 0;
     text-decoration: none;
@@ -177,16 +183,16 @@ body {
     border-color: rgb(0, 0, 0);
     box-shadow: 0 0 10px rgb(101, 172, 161);
     font-weight: bold;
-        font-size: 0.3rem;
+    font-size: 0.3rem;
 }
 
 .tel {
     position: absolute;
-    top:6.9rem;
+    top: 6.9rem;
     left: 0;
     right: 0;
     text-align: center;
-    color:#fff;
+    color: #fff;
     width: 60%;
     padding: 0.2rem;
     background: #ccc;
@@ -204,7 +210,7 @@ body {
     left: 0;
     right: 0;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     width: 58%;
     padding: 0.2rem;
     background: #ccc;
@@ -228,18 +234,53 @@ body {
     z-index: 6;
     border: 0.1rem solid #fff;
     box-shadow: 0 0 10px rgb(101, 172, 161);
-    transition: left 0.2s linear, top 0.2s cubic-bezier(.48,0,.94,.28);
-   /*   -webkit-animation: suiyuan 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite ease-in-out;
-    animation: suiyuan 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86)  infinite ease-in-out; */
-
 }
 
 .photo img {
+    border-radius: 100%;
     display: block;
     width: 100%;
     height: 100%;
-    transition: left 0.2s linear, top 0.2s cubic-bezier(.48,0,.94,.28);
 }
+
+
+.run-bottom {
+    animation: run-bottom 1s 0.4s 1;
+}
+
+
+
+/* //向上走的动画初始及结尾值 */
+@keyframes run-top {
+    0% {
+        opacity: 0;
+        top: 0rem;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        top: 3rem;
+        transform: rotate(360deg);
+    }
+}
+
+/* //向上走的动画初始及结尾值 */
+@keyframes run-bottom {
+    0% {
+        opacity: 0;
+        top: 10rem;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        top: 3rem;
+        transform: rotate(360deg);
+    }
+}
+
+
 
 .u-arrow-bottom {
     position: absolute;
@@ -254,7 +295,6 @@ body {
 .pre-wrap-bottom {
     width: 0.4rem;
     height: 0.4rem;
-    /* background: #ccc; */
     position: relative;
     -webkit-animation: start 1.5s infinite ease-in-out;
     animation: start 1.5s infinite ease-in-out;
@@ -266,7 +306,6 @@ body {
     width: 0.4rem;
     position: absolute;
     top: -0.05rem;
-    /* overflow: hidden; */
 
 }
 
@@ -344,49 +383,47 @@ body {
 }
 
 
-@-webkit-keyframes suiyuan {
-    0%,
-    100%,
-    20%,
-    40%,
-    60%,
-    80% {
-transition: all 2s cubic-bezier(.65,.13,.22,.88);
-
-        /* -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1) */
-    }
-
-}
-
 /*page2*/
-.page2box{
-    width: 100%;
-    height:9.38rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+.page2box {
+    width: 95%;
+    height: 9.38rem;
+    margin: 0.5rem auto 0;
     position: relative;
+    display: flex;
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
-.page2bg1{
-    width: 6.15rem;
+
+.page2bg1 {
+    width: 100%;
     position: absolute;
     z-index: 1;
-    top:0;
+    top: 0;
     left: 0;
 }
-.page2bg2{
-    width: 6.19rem;
+
+.page2bg2 {
+    width: 99%;
     position: absolute;
     z-index: 2;
-    top:0;
+    top: 0;
     left: 0;
 }
-.page2bg3{
-    width: 5.83rem;
+
+.page2bg3 {
+    width: 92%;
     position: absolute;
     z-index: 3;
-    top:0.12rem;
-    left: 0.2rem;
+    top: 0.12rem;
+    left: 0rem;
+    right: 0;
+    margin: 0 auto;
+
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -394,28 +431,35 @@ transition: all 2s cubic-bezier(.65,.13,.22,.88);
     -o-border-radius: 6px;
     overflow: hidden;
 }
-.page2bg4{
-    width: 5.6rem;
+
+.page2bg4 {
+    width: 88%;
     position: absolute;
     z-index: 4;
-    top:0.22rem;
-    left: 0.32rem;
+    top: 0.22rem;
+    left: 0rem;
+    right: 0;
+    margin: 0 auto;
 }
 
 
-.page2bg img{
+.page2bg img {
     display: block;
     width: 100%;
 }
-.page2con{
-    width: 5.6rem;
+
+.page2con {
+    width: 88%;
     height: 9rem;
     position: absolute;
     z-index: 10;
-    top:0.22rem;
-    left: 0.32rem;
+    top: 0.22rem;
+    left: 0rem;
+    right: 0;
+    margin: 0 auto;
 }
-.page2con h1{
+
+.page2con h1 {
     display: block;
     font-size: 0.35rem;
     color: rgb(101, 172, 161);
@@ -423,13 +467,141 @@ transition: all 2s cubic-bezier(.65,.13,.22,.88);
     text-align: center;
     padding: 0.2rem 0;
 }
-.spanbt{
+
+.spanbt {
     display: block;
     width: 100%;
     font-size: 0.44rem;
     color: #fff;
     background: rgb(101, 172, 161);
     text-align: center;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.userinfo {
+    padding: 0.3rem;
+    overflow: hidden;
+}
+
+.userinfo .item {
+    float: left;
+
+}
+
+
+.txtintroduce span {
+    display: inline-block;
+}
+
+.userinfo .avatar {
+    position: relative;
+    height: 3rem;
+    width: 40%;
+
+}
+
+.userinfo .avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 3rem;
+}
+
+.userinfo .avatar .avatarzhao {
+    z-index: 2;
+    top: 0.1rem;
+    left: 0.1rem;
+}
+
+.userinfo .avatar .avatarbg {
+    z-index: 1;
+}
+
+.txtintroduce {
+    font-size: 0.2rem;
+    padding-left: 0.6rem;
+}
+
+.txtintroduce div {
+    margin-bottom: 0.15rem;
+    margin-top: 0.2rem;
+}
+
+.txtintroduce span.act {
+    color: rgb(101, 172, 161);
+    margin-right: 0.3rem;
+
+}
+
+.introduction {
+    padding: 0.3rem;
+}
+
+.introtit {
+    background: rgb(101, 172, 161);
+    padding: 0.1rem;
+    width: 2rem;
+    color: #fff;
+    text-align: right;
+    position: relative;
+}
+
+.introtit img {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.05rem;
+}
+
+.introcontent {
+    color: #000;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    padding-top: 0.2rem;
+}
+
+.experience{
+    padding-left: 0.4rem;
+    font-size: 0.2rem;
+}
+.experience ul{
+    padding-left: 0.1rem;
+    padding-top: 0.3rem;
+
+}
+.experience ul li{
+    position: relative;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem
+}
+.experience ul li:after{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.experience ul li:before{
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    background: rgb(255,244,232,1) url(../image/mobile/sytb.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -0.25rem;
+    transform: rotate(235deg);
+    z-index: 9;
+}
+
+.experience .jiedian{
+    color: #676767;
     font-weight: bold;
     padding: 0.2rem 0;
 }
