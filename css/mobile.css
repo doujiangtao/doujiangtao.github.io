@@ -6,6 +6,8 @@ ul,li{
     list-style: none;
 }
 
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
 html,
 body,
 #banner,
@@ -18,7 +20,44 @@ body {
     background: #fff;
     overflow: hidden;
 }
+.music{
+    position: absolute;
+    top: 1.5rem;
+    right: 0.7rem;
+    background: rgb(101, 172, 161,.5);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 100%;
+    z-index: 9;
+    border: 2px solid #fff;
+    -webkit-animation: Spin 1s linear infinite ;
+    outline: none;
+     animation-play-state:paused;
+  -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+     
+}
 
+
+.Spin{
+      animation: Spin 1s linear infinite;  
+}
+
+@-webkit-keyframes Spin{
+      0%{-webkit-transform:rotate(0deg);}
+      100%{-webkit-transform:rotate(360deg);}
+
+
+}
+@keyframes Spin{
+     0%{-webkit-transform:rotate(0deg);}
+     100%{-webkit-transform:rotate(360deg);}
+}
+.music img{
+    display: block;
+    width: 80%;
+    border-radius: 100%;
+    margin: 0.1rem auto;
+}
 #banner .swiper-slide {
     overflow: hidden;
     position: relative;
@@ -254,21 +293,6 @@ body {
 }
 
 
-
-/* //向上走的动画初始及结尾值 */
-@keyframes run-top {
-    0% {
-        opacity: 0;
-        top: 0rem;
-        transform: rotate(0deg);
-    }
-
-    100% {
-        opacity: 1;
-        top: 3rem;
-        transform: rotate(360deg);
-    }
-}
 
 /* //向上走的动画初始及结尾值 */
 @keyframes run-bottom {
@@ -627,4 +651,23 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+/* 自我评价 */
+.self-evaluation ul li:after{
+    height: 0 !important;
+}
+.self-tag{
+    text-align: center;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+}
+.item_tag{
+    margin: 0 auto;
+    color: #fff;
+    background: #ccc;
+    background: rgb(101, 172, 161);
+    display: inline-block;
+    width: 3rem;
+    padding: 0.1rem;
 }
