@@ -21,6 +21,7 @@ body {
     overflow: hidden;
 }
 .music{
+
     position: absolute;
     top: 1.5rem;
     right: 0.7rem;
@@ -31,9 +32,8 @@ body {
     z-index: 9;
     border: 2px solid #fff;
     -webkit-animation: Spin 1s linear infinite ;
-    outline: none;
      animation-play-state:paused;
-  -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+    -webkit-animation-play-state:paused; /* Safari 和 Chrome */
      
 }
 
@@ -412,6 +412,159 @@ body {
 }
 
 
+.PicFlipL{
+      animation: PicFlipL linear;
+}
+.PicFlipR{
+     animation: PicFlipR 1s 0.4s 1;
+}
+
+
+
+
+
+@keyframes PicFlipR{
+    0%{
+         opacity: 0;
+        right: -90%;
+        transform: rotate(-0deg);
+        
+    }
+
+    10%{
+        opacity: .1;
+        right: -80%;
+        transform: rotate(-10deg);
+        
+    }
+    20%{
+        opacity: .2;
+        right: -70%;
+        transform: rotate(-20deg);
+        
+    }
+    30%{
+        opacity: .3;
+        right: -60%;
+        transform: rotate(-30deg);
+       
+    }
+    40%{
+        opacity: .4;
+        right: -50%;
+        transform: rotate(-40deg);
+    }
+    50%{
+        opacity: .5;
+        right: -40%;
+        transform: rotate(-50deg);
+    }
+
+
+    60% {
+         opacity: .6;
+        right: -30%;
+         transform: rotate(-60deg);
+    }
+    70%{
+        opacity: .7;
+        right: -20%;
+        transform: rotate(-70deg);
+    }
+    80%{
+        opacity: .8;
+        right: -10%;
+        transform: rotate(-80deg);
+    }
+    90%{
+        opacity: .9;
+        right: -5%;
+        transform: rotate(-90deg);
+       
+    }
+
+    to {
+         opacity: 1;
+        right: 0;
+         transform: rotate(-100deg);
+         -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+        
+    }
+}
+
+
+
+@keyframes PicFlipL{
+    0%{
+         opacity: 0;
+        left: -90%;
+        transform: rotate(0deg);
+        
+    }
+
+    10%{
+        opacity: .1;
+        left: -80%;
+        transform: rotate(10deg);
+        
+    }
+    20%{
+        opacity: .2;
+        left: -70%;
+        transform: rotate(20deg);
+        
+    }
+    30%{
+        opacity: .3;
+        left: -60%;
+        transform: rotate(30deg);
+       
+    }
+    40%{
+        opacity: .4;
+        left: -50%;
+        transform: rotate(40deg);
+    }
+    50%{
+        opacity: .5;
+        left: -40%;
+        transform: rotate(50deg);
+    }
+
+
+    60% {
+         opacity: .6;
+        left: -30%;
+         transform: rotate(60deg);
+    }
+    70%{
+        opacity: .7;
+        left: -20%;
+        transform: rotate(70deg);
+    }
+    80%{
+        opacity: .8;
+        left: -10%;
+        transform: rotate(80deg);
+    }
+    90%{
+        opacity: .9;
+        left: -5%;
+        transform: rotate(90deg);
+       
+    }
+
+    to {
+         opacity: 1;
+        left: 0;
+         transform: rotate(100deg);
+         -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+        
+    }
+}
+
 /*page2*/
 .page2box {
     width: 95%;
@@ -426,6 +579,7 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
+
 }
 
 .page2bg1 {
@@ -441,7 +595,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 .page2bg3 {
@@ -495,6 +649,7 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 0.2rem 0;
+    width: 100%;
 }
 
 .spanbt {

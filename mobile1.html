@@ -63,21 +63,28 @@
 
                                     <div class="swiper-slide swiper-slide-next" style="background: url(./image/mobile/s1.png);    background-size: cover;">
                                       <div class="page2box">
-                                            <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
-                                            <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
-                                            <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
-                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            <div class="page2bg page2bg1 ani"   swiper-animate-effect="PicFlipL" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  >
+                                              <img src="image/mobile/page2bg1.png">
+                                            </div>
+                                            <div class="page2bg page2bg2 ani " swiper-animate-effect="PicFlipR" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  >
+                                              <img src="image/mobile/page2bg2.png">
+                                            </div>
+                                            <div class="page2bg page2bg3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s"   ><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s"   ><img src="image/mobile/page2bg4.png"></div>
                                             
                                             <div class="page2con">
-                                              <h1>The&nbsp;personal&nbsp;data</h1>
-                                              <span class="spanbt">个人资料</span>
-                                              <div class="userinfo">
-                                                  <div class="item avatar">
-                                                    <img src="image/mobile/avator.png" class="avatarzhao">
-                                                    <img src="image/mobile/avatorbg.png" class="avatarbg">
+                                              <h1  class=" ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">The&nbsp;personal&nbsp;data</h1>
+                                              <div style="height: 0.8rem;width: 100%;"> </div>
+                                                
+                                              <span class="spanbt ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">个人资料</span>
+                                              <div style="height: 0.8rem;width: 100%;"> </div>
+                                              <div class="userinfo ">
+                                                  <div class="item avatar ">
+                                                    <img src="image/mobile/avator.png" class="avatarzhao ani"  swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" >
+                                                    <img src="image/mobile/avatorbg.png" class="avatarbg ani" swiper-animate-effect="slideInLeft"swiper-animate-duration="0.5s" swiper-animate-delay="0s" >
                                                   </div>
                                                   <div class="item">
-                                                    <div class="txtintroduce">
+                                                    <div class="txtintroduce ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0s" >
                                                       <div><span class="act">姓名</span> <span>张三三</span></div>
                                                       <div><span class="act" class="act">年龄</span> <span>18岁</span></div>
                                                       <div><span class="act">电话</span> <span>18893462426</span></div>
@@ -86,9 +93,9 @@
                                                     </div>
                                                   </div>
                                             </div>
-                                            <div class="introduction">
-                                              <div class="introtit"> <img src="image/mobile/sq.png">自我介绍</div>
-                                              <div class="introcontent">毕业中央美院，4年室内设计工作经验，我不是什么牛人我只是菜鸟，一直在成长中。从事网站的建设与分析，有美丽的幻想，有美好的憧憬。 从学习到工作一直做我喜欢的设计，可以说现在是更为全面学习的时候，每一天我都很开心，有我喜欢的工作和生活。</div>
+                                            <div class="introduction "  >
+                                              <div class="introtit ani" swiper-animate-effect="slideInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s"> <img src="image/mobile/sq.png">自我介绍</div>
+                                              <div class="introcontent ani" swiper-animate-effect="slideInUp" swiper-animate-duration="0.6s" swiper-animate-delay="0s">毕业中央美院，4年室内设计工作经验，我不是什么牛人我只是菜鸟，一直在成长中。从事网站的建设与分析，有美丽的幻想，有美好的憧憬。 从学习到工作一直做我喜欢的设计，可以说现在是更为全面学习的时候，每一天我都很开心，有我喜欢的工作和生活。</div>
 
                                             </div>
                                             </div>
@@ -268,7 +275,7 @@
                                             <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
                                             <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
                                             <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
-                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>css3动画如何实现停止以后停留在最后一帧动画
                                             
                                             <div class="page2con">
                                               <h1>works&nbsp;show&nbsp;</h1>
@@ -348,55 +355,28 @@
                             // window.location.href ="./index.html";
                         };
 
-
-                        // var startScroll, touchStart, touchCurrent;    
-                        // swiper.slides.on('touchstart', function (e) {    
-                        //     startScroll = this.scrollTop;  
-                        //     touchStart = e.targetTouches[0].pageY;  
-                        // }, true);  
-                        // swiper.slides.on('touchmove', function (e) {    
-                        //     touchCurrent = e.targetTouches[0].pageY;  
-                        //     var touchesDiff = touchCurrent - touchStart;  
-                        //     var slide = this;  
-                        //     var onlyScrolling =  
-                        //             ( slide.scrollHeight > slide.offsetHeight*2 ) && //allow only when slide is scrollable  
-                        //             (  
-                        //                 ( touchesDiff < 0 && startScroll === 0 ) || //start from top edge to scroll bottom  
-                        //                 ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) || //start from bottom edge to scroll top  
-                        //                 ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) ) //start from the middle  
-                        //             );  
-                        //     if (onlyScrolling) {  
-                        //         e.stopPropagation();  
-                        //     }  
-                        // }, true);  
-$(document).ready(function(){
-       var flag=true;
-       var audio=$('.music audio').get(0);
-        $('.music').on('click', function () {
-             if(!flag){
-                $(this).removeClass('Spin')
-                        $(this).css({"-webkit-animation-play-state":"paused"});
-                        audio.pause();
-                        flag=true;
-             }else{
-                $(this).addClass('Spin')
-                        $(this).css({"-webkit-animation-play-state":"running"});
-                          flag=false;
-                         audio.play();
-             }
-         
-        })
+ 
+                        $(document).ready(function(){
+                               var flag=true;
+                               var audio=$('.music audio').get(0);
+                                $('.music').on('click', function () {
+                                     if(!flag){
+                                        $(this).removeClass('Spin')
+                                                $(this).css({"-webkit-animation-play-state":"paused"});
+                                                audio.pause();
+                                                flag=true;
+                                     }else{
+                                        $(this).addClass('Spin')
+                                                $(this).css({"-webkit-animation-play-state":"running"});
+                                                  flag=false;
+                                                 audio.play();
+                                     }
+                                 
+                                })
+                        })
 
 
-
-      // document.addEventListener('touchstart', function() {
-      //  document.getElementsByTagName('audios')[0].play()
-      // })
-})
-
-
-
-                        </script>
+</script>
 </body>
 
 </html>
