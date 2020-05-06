@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/zzsc.css">
     <script src="./js/swiper.min.js"></script>
     <script src="./js/swiper.animate.min.js"></script>
     <script src="./js/rem.js"></script>
@@ -20,6 +21,26 @@
 </head>
 
 <body>
+<div class="out" id="main_loading">
+  <div class="fade-in">
+    <div class="container">
+      <div class="one common"></div>
+      <div class="two common"></div>
+      <div class="three common"></div>
+      <div class="four common"></div>
+      <div class="five common"></div>
+      <div class="six common"></div>
+      <div class="seven common"></div>
+      <div class="eight common"></div>
+    </div>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+</div>
+
+
+
     <div style="max-width:640px; margin:0 auto; height:100%; position:relative;">
         <div class="swiper-container  swiper-container-horizontal" id="banner">
             <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
@@ -374,6 +395,18 @@
                                  
                                 })
                         })
+
+
+                         document.onreadystatechange = completeLoading;
+        // 加载状态为complete时移除loading效果
+        function completeLoading() {
+                if (document.readyState =="complete") {
+                        document.getElementById('main_loading').style.display="none";
+                }
+                else{
+                        document.getElementById('main_loading').style.display="block";
+                }
+        }
 
 
 </script>
