@@ -1,89 +1,385 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0054)https://www.swiper.com.cn/demo/progressShow/index.html -->
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="./css/swiper.min.css">
-
-  <!-- Demo styles -->
-  <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>个人简历</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<link rel="stylesheet" href="../../dist/css/swiper.min.css">
+<script src="../../dist/js/swiper.min.js"></script>-->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/zzsc.css">
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/swiper.animate.min.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <style>
+    </style>
 </head>
+
 <body>
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
+<div class="out" id="main_loading">
+  <div class="fade-in">
+    <div class="container">
+      <div class="one common"></div>
+      <div class="two common"></div>
+      <div class="three common"></div>
+      <div class="four common"></div>
+      <div class="five common"></div>
+      <div class="six common"></div>
+      <div class="seven common"></div>
+      <div class="eight common"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
   </div>
-
-  <!-- Swiper JS -->
-  <script src="./js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      mousewheel: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+</div>
 
 
-    // 判断苹果、安卓、pc
-	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
-	  window.location.href ="./mobile1.html";
-	} else if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
-	  window.location.href ="./mobile1.html";
-	} else { //pc
-	  // window.location.href ="pc.html";
-	};
-  </script>
+
+    <div style="max-width:640px; margin:0 auto; height:100%; position:relative;">
+        <div class="swiper-container  swiper-container-horizontal" id="banner">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide swiper-slide-active" style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                    <div class="boxfirst">
+                        <div class="name ani resize" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <span style="">豆江涛</span>
+                        </div>
+                        <img src="./image/mobile/tyuan.png" class="tuoyuan baikuang ani resize "  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"   >
+                        <img src="./image/mobile/xukuang.png" class="tuoyuan xukuang ani resize"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"   >
+                        <img src="./image/mobile/kuangbg.png" class="tuoyuan  kuangbg ani resize"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"   >
+                        <div class="shuye shuye1 ani resize">
+                            <img src="./image/mobile/shuye.png" class=" ani resize"  swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"   >
+                        </div>
+                            <div class="shuye shuye2 ani resize">
+                                <img src="./image/mobile/shuye2.png" class="ani resize"  swiper-animate-effect="rollIn" swiper-animate-duration="0.6s" swiper-animate-delay="0.6s"   >
+                        </div>
+                                <div class="gr">
+                                    <div class="gr_item">
+                                        <img src="./image/mobile/gr1.png" class="ani "  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s"   >
+                                    </div>
+                                        <div class="gr_item">
+                                            <img src="./image/mobile/gr2.png" class="ani "  swiper-animate-effect="bounceInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s"   >
+                                    </div>
+                                        </div>
+                                        <div class="photo ani" swiper-animate-effect="run-bottom" swiper-animate-duration="0.8s" swiper-animate-delay="0s">
+                                            <img src="./image/mobile/photo.png"  >
+                                 </div>
+                                            <div class="yixang ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                                求职意向：前端开发工程师
+                                            </div>
+                                            <div class="tel ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                                联系电话：13552030296
+                                            </div>
+                                        </div>
+                                        <div class="intro">
+                                            遇见更好的自己
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide swiper-slide-next" style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                                      <div class="page2box">
+                                            <div class="page2bg page2bg1 ani"   swiper-animate-effect="PicFlipL" swiper-animate-duration="0.8s" swiper-animate-delay="0s"  >
+                                              <img src="image/mobile/page2bg1.png">
+                                            </div>
+                                            <div class="page2bg page2bg2 ani " swiper-animate-effect="PicFlipR" swiper-animate-duration="0.8s" swiper-animate-delay="0s"  >
+                                              <img src="image/mobile/page2bg2.png">
+                                            </div>
+                                            <div class="page2bg page2bg3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s"   ><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s"   ><img src="image/mobile/page2bg4.png"></div>
+                                            
+                                            <div class="page2con">
+                                              <h1  class=" ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.9s" swiper-animate-delay="0.5s">The&nbsp;personal&nbsp;data</h1>
+                                              <div style="height: 0.8rem;width: 100%;"> </div>
+                                                
+                                              <span class="spanbt ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.9s" swiper-animate-delay="0.6s">个人资料</span>
+                                              <div style="height: 0.8rem;width: 100%;"> </div>
+                                              <div class="userinfo ">
+                                                  <div class="item avatar ">
+                                                    <img src="image/mobile/avator.png" class="avatarzhao ani"  swiper-animate-effect="slideInLeft" swiper-animate-duration="0.9s" swiper-animate-delay="0.1s" >
+                                                    <img src="image/mobile/avatorbg.png" class="avatarbg ani" swiper-animate-effect="slideInLeft"swiper-animate-duration="0.9s" swiper-animate-delay="0.1s" >
+                                                  </div>
+                                                  <div class="item">
+                                                    <div class="txtintroduce ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0s" >
+                                                      <div><span class="act">姓名</span> <span>豆江涛</span></div>
+                                                      <div><span class="act" class="act">年龄</span> <span>26岁</span></div>
+                                                      <div><span class="act">电话</span> <span>13552030296</span></div>
+                                                      <div><span class="act">籍贯</span> <span>甘肃天水</span></div>
+                                                      <div><span class="act">专业</span> <span>前端开发</span></div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="introduction "  >
+                                              <div class="introtit ani" swiper-animate-effect="slideInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s"> <img src="image/mobile/sq.png">自我评价</div>
+                                              <div class="introcontent ani" swiper-animate-effect="slideInUp " swiper-animate-duration="0.6s" swiper-animate-delay="0s">1、喜欢学习新技术，有良好的文档编写和代码书写规范，耐心打磨用户体验和用户界面
+                                                  2、有良好的沟通能力和团队合作能力，性格随和，认真负责，自学能力强
+                                                </div>
+
+                                            </div>
+                                            </div>
+
+                                      </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                  
+                                  <!--  <div class="swiper-slide swiper-slide-next " style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                                      <div class="page2box">
+                                            <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
+                                            <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
+                                            <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            
+                                             <div class="page2con">
+                                              <h1>Work&nbsp;hisotry&nbsp;</h1>
+                                              <span class="spanbt">工作履历</span>
+                                              <div class="experience noSwipingClass scroll-wrap second" >
+                                                  <ul>
+                                                    <li>
+                                                       <div class="jiedian"> <span>2016年8月</span> <span>云极互动（北京）科技有限公司</span></div>
+                                                       <div>在职期间尽职尽责，认真负责，领导很是满意。</div>
+
+                                                    </li>
+                                                     <li>
+                                                       <div class="jiedian"> <span>2018年4月</span> <span>北京云狐时代科技有限公司</span></div>
+                                                        <div>在职期间能够吃苦耐劳，自学能力强，具有良好的团队合作精神</div>
+                                                       
+                                                    </li>
+                                                   
+                                                  </ul>
+
+                                              </div>
+                                            </div>
+
+
+                                      </div>
+                                   </div> -->
+
+                                   <div class="swiper-slide swiper-slide-next " style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                                      <div class="page2box">
+                                            <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
+                                            <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
+                                            <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            
+                                             <div class="page2con">
+                                              <h1>Work&nbsp;hisotry&nbsp;</h1>
+                                              <span class="spanbt">工作履历</span>
+                                              <!-- <div class="experience noSwipingClass scroll-wrap  thrid"> -->
+                                                <div class="experience noSwipingClass scroll-wrap  second">
+                                                  <ul>
+                                                    <li>
+                                                       <div class="jiedian">
+                                                        <span >2020/02--2020/05</span>
+                                                        <div><span>姆渡CRM管理系统</span></div>
+                                                       </div>
+                                                       <div >负责河姆渡CRM管理系统的开发，在项目中担任组长一职，负责整个项目的进度及项目架构的把控还有难点问题的突破</div>
+                                                    </li>
+                                                    <li>
+                                                       <div class="jiedian">
+                                                        <span>2019/06--2019/08</span>
+                                                        <div><span>鱼英文阅读APP</span></div>
+                                                       </div>
+                                                        <div>负责蓝鱼英文阅读APP的开发，在项目中负责前端页面的实现及数据的交互及底层的框架（Apicloud）包括两端（Android，Ios）的工作。</div>
+                                                       
+                                                    </li>
+                                                    <li>
+                                                       <div class="jiedian">
+                                                        <span>2019/03--2019/04</span>
+                                                        <div><span>U学院小程序</span></div>
+                                                       </div>
+                                                        <div>负责前端的全部页面及效果的实现、Java负责数据的渲染</div>
+                                                    </li>
+                                                  </ul>
+                                              </div>
+                                            </div>
+                                      </div>
+                                   </div>
+
+
+                                    <div class="swiper-slide swiper-slide-next" style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                                      <div class="page2box">
+                                            <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
+                                            <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
+                                            <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            
+                                            <div class="page2con">
+                                              <h1>Job&nbsp;skills&nbsp;</h1>
+                                              <span class="spanbt">工作技能</span>
+                                                <div class="experience noSwipingClass scroll-wrap  thrid">
+                                                  <ul >
+                                                    <li>
+                                                      <div>1. 熟练使用合理的结构和样式编写兼容主流浏览器的页面；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>2. 能适当运用Css3使页面在现代浏览器上体验效果更佳；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>3. 熟练使用Rem、Em单位和Flex布局实现移动设备不同分辨率的适配；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>4. 熟练使用Photoshop软件进行简单的图片处理，能根据图片特征保存成最优的格式；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>5. 熟练使用原生Javascript以及常用的JavaScript库，如jQuery、Zepto等；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>6. 熟练使用Bootstrap、Swiper、Mui、Aui、Element-ui等前端样式库和矿建进行开发；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>7.熟练使用Vue、Webpack进行模块化开发单页面应用，了解数据双向绑定原理，熟练编写组件、控制器、服务等；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>8. 能够熟练使用Hybrid混合开发技术开发（Android、Ios）APP以及Webapp的开发；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>9. 能够独立开发微信小程序工作及微信场景开发等；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>10.  熟练运用Ajax实现异步数据传递，熟悉Json等数据交换格式；了解Php和数据库；</div>
+                                                    </li>
+                                                    <li>
+                                                      <div>11.  熟练使用Git、Svn进行代码管理和版本控制；</div>
+                                                    </li>
+                                                   
+                                                  </ul>
+                                                
+                                                </div>
+                                            </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="swiper-slide swiper-slide-next" style="background: url(./image/mobile/s1.png);    background-size: cover;">
+                                      <div class="page2box">
+                                            <div class="page2bg page2bg1"><img src="image/mobile/page2bg1.png"></div>
+                                            <div class="page2bg page2bg2"><img src="image/mobile/page2bg2.png"></div>
+                                            <div class="page2bg page2bg3"><img src="image/mobile/page2bg3.png"></div>
+                                            <div class="page2bg page2bg4"><img src="image/mobile/page2bg4.png"></div>
+                                            
+                                            <div class="page2con">
+                                              <h1>Self&nbsp;assessment&nbsp;</h1>
+                                              <span class="spanbt "  >自我评价</span>
+                                                <div class="experience self-evaluation noSwipingClass scroll-wrap  thrid pin">
+                                                  <ul >
+                                                    <li>
+                                                      <div class="self-tag"><span class="item_tag ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">扎实的专业基础</span></div>
+                                                      <div class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">4年的一线前端开发经验，有良好的文档编写和代码书写规范</div>
+                                                    </li>
+                                                    <li>
+                                                       <div class="self-tag"><span class="item_tag ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="0.8s" swiper-animate-delay="0s">较强的学习能力</span></div>
+                                                      <div class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0s">对新出现的技术能够快速学习并在项目开发中使用</div>
+                                                    </li>
+                                                    <li>
+                                                       <div class="self-tag"><span class="item_tag ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.9s" swiper-animate-delay="0s">丰富的实践经历</span></div>
+                                                      <div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">云极互动（北京）科技有限公司、北京云狐时代科技有限公司等很多公司大型的项目培养了很强的工作能力。</div>
+                                                    </li>
+                                                  </ul>
+                                                
+                                            </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <section class="u-arrow-bottom" style="bottom: 30px;">
+                                <div class="pre-wrap-bottom">
+                                    <div class="pre-box1">
+                                        <div class="pre1"></div>
+                                    </div>
+                                    <div class="pre-box2">
+                                        <div class="pre2"></div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="music">
+                              <audio loop="" src="image/mobile/0429.mp3" autoplay="false" preload="true"></audio>
+                              <img src="image/mobile/music.png" alt="" class="hh">
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                        var swiper = new Swiper('#banner', {
+                            mousewheel: true,
+                            direction: 'vertical',
+                            roundLengths: true,
+                            noSwipingClass : 'scroll-wrap',
+                            touchMoveStopPropagation : false,
+                            loop:true,
+                            // autoHeight: true,
+                            // watchSlidesProgress: true,
+                            speed: 300,
+                            mousewheel: true,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            on: {
+                                init: function() {
+                                    swiperAnimateCache(this);
+                                    swiperAnimate(this);
+                                },
+                                slideChangeTransitionEnd: function() {
+                                    swiperAnimate(this);
+                                }
+
+                            }
+                        });
+
+                        // 判断苹果、安卓、pc
+                        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+
+                        } else if (/(Android)/i.test(navigator.userAgent)) { //判断Android
+
+                        } else { //pc
+                            // window.location.href ="./index.html";
+                        };
+
+ 
+                        $(document).ready(function(){
+                               var flag=true;
+                               var audio=$('.music audio').get(0);
+                                $('.music').on('click', function () {
+                                     if(!flag){
+                                        $(this).removeClass('Spin')
+                                                $(this).css({"-webkit-animation-play-state":"paused"});
+                                                audio.pause();
+                                                flag=true;
+                                     }else{
+                                        $(this).addClass('Spin')
+                                                $(this).css({"-webkit-animation-play-state":"running"});
+                                                  flag=false;
+                                                 audio.play();
+                                     }
+                                 
+                                })
+                        })
+
+
+                         document.onreadystatechange = completeLoading;
+        // 加载状态为complete时移除loading效果
+        function completeLoading() {
+                if (document.readyState =="complete") {
+                        document.getElementById('main_loading').style.display="none";
+                }
+                else{
+                        document.getElementById('main_loading').style.display="block";
+                }
+        }
+
+
+</script>
 </body>
+
 </html>
